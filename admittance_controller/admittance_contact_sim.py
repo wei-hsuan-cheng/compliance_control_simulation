@@ -81,7 +81,7 @@ class AdmittanceParams:
 class EnvironmentParams:
     """Kelvin-Voigt unilateral wall parameters."""
     x_w: float = 0.10       # wall position [m]
-    K_e: float = 50_000.0   # environment stiffness [N/m]
+    K_e: float = 50000.0   # environment stiffness [N/m]
     D_e: float = 100.0      # environment damping [N*s/m]
     clamp_tensile_force: bool = True
 
@@ -536,13 +536,13 @@ def run_example() -> None:
 
     environment_params = EnvironmentParams(
         x_w=0.10,
-        K_e=50_000.0,
+        K_e=500000.0,
         D_e=100.0,
         clamp_tensile_force=True,
     )
 
     simulation_params = SimulationParams(
-        dt=0.0005,
+        dt=0.004,
         t_final=2.0,
     )
 
