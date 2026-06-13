@@ -536,14 +536,14 @@ def run_example() -> None:
 
     environment_params = EnvironmentParams(
         x_w=0.10,
-        K_e=500000.0,
+        K_e=5000000.0,
         D_e=100.0,
         clamp_tensile_force=True,
     )
 
     simulation_params = SimulationParams(
         dt=0.004,
-        t_final=2.0,
+        t_final=5.0,
     )
 
     reference = RampThenHoldReference(
